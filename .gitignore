@@ -4,13 +4,13 @@ __pycache__
 venv/
 
 #robot
-*.html
+
 robot/*
 *.log
 *.jpg
 *.png
 !exercises/img/clone_repo.png
-*.xml
+
 geckodriver-*.log
 setup/*.txt
 playwright-log.txt

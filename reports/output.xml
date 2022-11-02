@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.10.7 on win32)" generated="20221102 23:37:06.137" rpa="false" schemaversion="3">
+<suite id="s1" name="Testautomation-Exercise" source="C:\Git\testautomatisering\testautomation-exercise">
+<suite id="s1-s1" name="Tests" source="C:\Git\testautomatisering\testautomation-exercise\tests">
+<suite id="s1-s1-s1" name="Contact" source="C:\Git\testautomatisering\testautomation-exercise\tests\contact.robot">
+<test id="s1-s1-s1-t1" name=" Stockholm office is visible in Sweden contact info" line="6">
+<kw name="New Browser" library="Browser">
+<arg>headless=${FALSE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20221102 23:37:06.874" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "C:\\Git\\testautomatisering\\testautomation-exercise\\reports\\browser\\traces\\222cea30-2f66-48d8-a0dc-420cd6f0dbff"}</msg>
+<msg timestamp="20221102 23:37:07.287" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"C:\\Git\\testautomatisering\\testautomation-exercise\\reports\\browser\\traces\\222cea30-2f66-48d8-a0dc-420cd6f0dbff"}</msg>
+<status status="PASS" starttime="20221102 23:37:06.873" endtime="20221102 23:37:07.287"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://eficode.com/contact</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20221102 23:37:09.783" level="INFO">Successfully initialized new page object and opened url: https://eficode.com/contact</msg>
+<msg timestamp="20221102 23:37:09.784" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20221102 23:37:07.290" endtime="20221102 23:37:09.784"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath =//a[contains(text(),'Sweden')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221102 23:37:09.785" endtime="20221102 23:37:10.038"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath =//h3[contains(text(),'Sweden')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221102 23:37:10.039" endtime="20221102 23:37:10.082"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath =//h4[contains(text(),'Stockholm')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221102 23:37:10.082" endtime="20221102 23:37:10.118"/>
+</kw>
+<status status="PASS" starttime="20221102 23:37:06.871" endtime="20221102 23:37:10.118"/>
+</test>
+<status status="PASS" starttime="20221102 23:37:06.163" endtime="20221102 23:37:10.253"/>
+</suite>
+<suite id="s1-s1-s2" name="Trainings" source="C:\Git\testautomatisering\testautomation-exercise\tests\trainings.robot">
+<test id="s1-s1-s2-t1" name="Robot Framework fundamentals training is one day" line="6">
+<kw name="New Browser" library="Browser">
+<arg>headless=${FALSE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20221102 23:37:10.303" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "C:\\Git\\testautomatisering\\testautomation-exercise\\reports\\browser\\traces\\28996113-0e54-4593-9db5-a1d4eaeef3a5"}</msg>
+<msg timestamp="20221102 23:37:10.723" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"C:\\Git\\testautomatisering\\testautomation-exercise\\reports\\browser\\traces\\28996113-0e54-4593-9db5-a1d4eaeef3a5"}</msg>
+<status status="PASS" starttime="20221102 23:37:10.302" endtime="20221102 23:37:10.723"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://eficode.com</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20221102 23:37:12.221" level="INFO">Successfully initialized new page object and opened url: https://eficode.com</msg>
+<msg timestamp="20221102 23:37:12.221" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20221102 23:37:10.724" endtime="20221102 23:37:12.221"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath =//a[contains(@class,'cd-search-trigger')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221102 23:37:12.222" endtime="20221102 23:37:12.300"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name=term]</arg>
+<arg>Robot Framework fundamentals training</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20221102 23:37:12.300" level="INFO">Fills the text 'Robot Framework fundamentals training' in the given field.</msg>
+<status status="PASS" starttime="20221102 23:37:12.300" endtime="20221102 23:37:12.335"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Using form submit with javascript because enter dosnt work</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221102 23:37:12.336" level="INFO">Using form submit with javascript because enter dosnt work</msg>
+<status status="PASS" starttime="20221102 23:37:12.336" endtime="20221102 23:37:12.337"/>
+</kw>
+<kw name="Get Element" library="Browser">
+<var>${ref}</var>
+<arg>xpath =//*[@id="cd-search"]/form</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<msg timestamp="20221102 23:37:12.373" level="INFO">Locator found successfully.</msg>
+<msg timestamp="20221102 23:37:12.373" level="INFO">${ref} = element=a494e812-e735-42e8-b86c-ea277bc793ec</msg>
+<status status="PASS" starttime="20221102 23:37:12.337" endtime="20221102 23:37:12.373"/>
+</kw>
+<kw name="Execute JavaScript" library="Browser">
+<arg>(elem) =&gt; elem.submit()</arg>
+<arg>${ref}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>*DEPRECATED!!* Use keyword `Evaluate JavaScript` instead. This keyword will be removed end of 2022.</doc>
+<msg timestamp="20221102 23:37:12.379" level="WARN">Keyword 'Browser.Execute JavaScript' is deprecated. Use keyword `Evaluate JavaScript` instead. This keyword will be removed end of 2022.</msg>
+<status status="PASS" starttime="20221102 23:37:12.379" endtime="20221102 23:37:12.420"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath =(//a[.//span[contains(normalize-space(text()),'fundamentals')]])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221102 23:37:12.424" endtime="20221102 23:37:13.440"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath =//strong[contains(text(),'One day')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221102 23:37:13.441" endtime="20221102 23:37:13.675"/>
+</kw>
+<status status="PASS" starttime="20221102 23:37:10.299" endtime="20221102 23:37:13.676"/>
+</test>
+<status status="PASS" starttime="20221102 23:37:10.257" endtime="20221102 23:37:13.808"/>
+</suite>
+<status status="PASS" starttime="20221102 23:37:06.160" endtime="20221102 23:37:13.814"/>
+</suite>
+<status status="PASS" starttime="20221102 23:37:06.141" endtime="20221102 23:37:13.819"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Testautomation-Exercise">Testautomation-Exercise</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Tests">Testautomation-Exercise.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Contact">Testautomation-Exercise.Tests.Contact</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2" name="Trainings">Testautomation-Exercise.Tests.Trainings</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221102 23:37:12.379" level="WARN">Keyword 'Browser.Execute JavaScript' is deprecated. Use keyword `Evaluate JavaScript` instead. This keyword will be removed end of 2022.</msg>
+</errors>
+</robot>
