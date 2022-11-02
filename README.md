@@ -14,6 +14,8 @@
 * Add severicasserly to the repository as a [collaborator](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects#granting-a-collaborator-access-to-your-project)
 * [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your copy of the repository to your machine
 * Install Robot Framework Browser (if you do not have it installed)
+  * python -m venv venv
+  * source venv/Scripts/activate
   * Install robotframework and robotframework-browser python packages `pip install robotframework robotframework-browser`
   * Run `rfbrowser init`
 
