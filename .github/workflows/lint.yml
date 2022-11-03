@@ -23,7 +23,7 @@ jobs:
         with:
           name: reports
           path: reports
-  generate_report:
+ generate_report:
     if: always()
     needs: [test]
     runs-on: ubuntu-latest
